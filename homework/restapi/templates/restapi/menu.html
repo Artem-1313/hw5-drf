@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<div>
+    <h2> Menu: </h2>
+<ul>
+    <li><span><a href="{% url 'today' %}">today</a></span></li>
+    <li><span><a href="{% url 'hello_world' %}">hello world</a></span></li>
+    <li><span><a href="{% url 'my_name' %}">my name</a></span></li>
+    <li><span><a href="{% url 'calculator' %}">calculator</a></span></li>
+    <li><span><a href="{% url 'list_store' %}">DRF: list of store</a></span></li>
+    <li><span><a href="{% url 'add_store' %}"> DRF: add  store</a></span></li>
+    <li><span><a href="{% url 'detail_store' 1 %}"> DRF: methods PUT and DELETE ( for example: detail_store/1/ ) </a></span></li>
+
+
+
+
+  </ul>
+</div>
+
+</body>
+</html>
