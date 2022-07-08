@@ -11,9 +11,6 @@ class calculatorSerializer(serializers.Serializer):
     number1 = serializers.IntegerField()
     number2 = serializers.IntegerField()
 
-    #
-    # def validate_number1(self, value):
-    #     print(type(value))
 
     def validate(self, data):
 

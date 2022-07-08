@@ -104,10 +104,7 @@ def calculator(request):
     if request.method == "POST":
         serializer = calculatorSerializer(data=request.data)
         serializer.is_valid(raise_exception=True)
-        calc = request.data
-
-        if not isinstance(calc['number1'], int) or not isinstance(calc['number2'], int):
-            raise serializers.ValidationError("Number1 and Number2 must be int")
+        calc = serializer.validated_data
 
         if calc['action'] == "+":
             var = calc['number1'] + calc['number2']
